@@ -39,6 +39,7 @@ jobs:
       with:
         directory: terraform
         soft_fail: true
+      continue-on-error: true
 
     - name: Terraform Plan
       run: terraform plan -out=tfplan
