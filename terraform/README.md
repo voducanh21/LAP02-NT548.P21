@@ -28,3 +28,4 @@ docker run --rm -v ${PWD}:/workspace -v ${env:USERPROFILE}\.aws:/root/.aws -w /w
 
 # Thực hiện triển khai hạ tầng tự động (không cần xác nhận thủ công)
 docker run --rm -v ${PWD}:/workspace -v ${env:USERPROFILE}\.aws:/root/.aws -w /workspace hashicorp/terraform:latest apply -auto-approve
+# Trigger workflow
